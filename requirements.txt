@@ -1,5 +1,0 @@
-    
-flask
-gunicorn
-pymongo[tls,srv]
-requests
