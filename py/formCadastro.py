@@ -7,6 +7,7 @@ import datetime
 
 dbcollectionname = "messages"
 
+
 def listCadastro():
     dbcollection = dbConnection(dbcollectionname)
     cursor = dbcollection.find().sort("timestamp", -1).limit(10)
