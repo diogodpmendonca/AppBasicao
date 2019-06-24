@@ -5,7 +5,7 @@ from urllib.parse import unquote
 import datetime
 
 
-dbcollectionname = "usuario"
+dbcollectionname = "messages"
 
 def listCadastro():
     dbcollection = dbConnection(dbcollectionname)
@@ -21,3 +21,4 @@ def saveCadastro(request):
             "longitude": request.args.get("longitude"),
             "timestamp": datetime.datetime.utcnow()}
     return saveData(dbcollectionname, data)
+    
