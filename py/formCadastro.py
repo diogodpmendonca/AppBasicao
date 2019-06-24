@@ -21,4 +21,3 @@ def saveCadastro(request):
             "longitude": request.args.get("longitude"),
             "timestamp": datetime.datetime.utcnow()}
     return saveData(dbcollectionname, data)
-    
